@@ -1,0 +1,4 @@
+Direct level-set baselines are added to adaptive dimensional inspection
+Threshold-aware sampling reduces missed tolerance exceedances
+Geometry-informed sampling is not superior to Straddle overall
+Geometry benefit depends on the defect-location mechanism

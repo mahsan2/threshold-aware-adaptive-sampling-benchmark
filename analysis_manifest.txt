@@ -1,0 +1,11 @@
+benchmark_extended.py - primary 120-scenario benchmark and added threshold comparators
+analyze_extended.py - pooled/per-family summaries and seed-clustered paired inference
+robustness_ablation_extended.py - geometry-independent and adverse placement stress tests
+kernel_sensitivity.py - fixed GP length-scale sensitivity
+tune_evidence_weights.py - development/test U/G/D weight analysis
+tune_geometry_straddle.py - development/test geometry-Straddle analysis
+make_figures_extended.py - manuscript figures
+verify_reproducibility_extended.py - deterministic saved-output check
+run_all.py - full workflow driver
+DATA_DICTIONARY.md - output schema
+README.md - reproducibility and interpretation guide

@@ -1,0 +1,12 @@
+Dear Editor,
+
+Please consider our manuscript, “Threshold-Aware Adaptive Sampling for Dimensional Conformity Inspection: A Controlled Benchmark Against Reconstruction and Level-Set Baselines,” for publication in Precision Engineering.
+
+The manuscript addresses a measurement-allocation problem in dimensional inspection: sampling strategies that reconstruct a surface accurately do not necessarily minimize false-safe conformity decisions. We benchmark reconstruction-oriented sampling against direct Gaussian-process level-set comparators under matched surfaces, noise realizations, initial samples, and measurement budgets. The extended study includes two-sided Straddle, randomized Straddle, posterior-risk sampling, geometry ablations, seed-clustered inference, held-out weight analysis, and GP length-scale sensitivity. The results show that threshold-aware strategies substantially reduce missed tolerance exceedances relative to reconstruction-oriented baselines, while the geometry-informed composite is not statistically distinguishable from deterministic two-sided Straddle overall. This negative comparison is retained explicitly because it identifies threshold awareness, rather than the particular composite score, as the dominant source of improvement. Geometry-placement stress tests further show when nominal geometric information helps and when it should be down-weighted.
+
+The manuscript is presented as a controlled, reproducible metrology benchmark rather than a deployment-ready conformity procedure. All synthetic benchmark code, scenario-level results, statistical analyses, and figure-generation scripts are supplied as Supplementary Code S1.
+
+The work is original and is not under consideration elsewhere. The authors will provide the required authorship, funding, and conflict-of-interest information through the submission system and manuscript title page.
+
+Sincerely,
+[Corresponding author]

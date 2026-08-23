@@ -1,0 +1,43 @@
+
+FINAL SUMMARY
+              method   n     rmse  agreement   missed   recall  precision      fpr  balanced_accuracy  prevalence
+      evidence_gated 120 0.006865   0.975947 0.262863 0.737137   0.769139 0.009251           0.863943    0.050027
+evidence_no_geometry 120 0.007225   0.975387 0.291844 0.708156   0.753927 0.009256           0.849450    0.050027
+       geometry_only 120 0.006995   0.966827 0.418244 0.581756   0.712877 0.010943           0.785406    0.050027
+      posterior_risk 120 0.008414   0.975467 0.283472 0.716528   0.773103 0.008555           0.853987    0.050027
+ randomized_straddle 120 0.007898   0.975000 0.288490 0.711510   0.763748 0.008870           0.851320    0.050027
+       risk_geometry 120 0.008257   0.975027 0.265187 0.734813   0.780228 0.009016           0.862899    0.050027
+       space_filling 120 0.006036   0.970040 0.403111 0.596889   0.716707 0.010289           0.793300    0.050027
+  two_sided_straddle 120 0.006979   0.975373 0.269884 0.730116   0.759443 0.009848           0.860134    0.050027
+    uncertainty_only 120 0.006037   0.969733 0.373478 0.626522   0.716665 0.010531           0.807995    0.050027
+
+CLUSTERED COMPARISONS
+            metric             baseline  n_scenarios  n_seed_clusters  mean_difference  cluster_bootstrap_ci_low  cluster_bootstrap_ci_high  scenario_wilcoxon_p  seed_cluster_wilcoxon_p  seed_level_rank_biserial  holm_seed_p
+decision_agreement        space_filling          120               15         0.005907                  0.004760                   0.007107         1.596721e-11                 0.000653                  1.000000     0.003920
+ missed_exceedance        space_filling          120               15        -0.140248                 -0.179492                  -0.102455         4.812371e-11                 0.000061                 -1.000000     0.000427
+              rmse        space_filling          120               15         0.000829                  0.000625                   0.001029         2.429432e-06                 0.000061                  1.000000     0.000427
+ balanced_accuracy        space_filling          120               15         0.070643                  0.051916                   0.090181         1.469919e-11                 0.000061                  1.000000     0.000427
+decision_agreement        geometry_only          120               15         0.009120                  0.007573                   0.010733         5.433613e-14                 0.000653                  1.000000     0.003920
+ missed_exceedance        geometry_only          120               15        -0.155381                 -0.197707                  -0.114745         3.467715e-12                 0.000061                 -1.000000     0.000427
+              rmse        geometry_only          120               15        -0.000130                 -0.000482                   0.000186         3.391292e-01                 0.678772                 -0.133333     0.678772
+ balanced_accuracy        geometry_only          120               15         0.078536                  0.058508                   0.099511         1.691616e-12                 0.000061                  1.000000     0.000427
+decision_agreement     uncertainty_only          120               15         0.006213                  0.005027                   0.007293         6.927394e-12                 0.000061                  1.000000     0.000427
+ missed_exceedance     uncertainty_only          120               15        -0.110615                 -0.152139                  -0.071106         1.675455e-09                 0.000305                 -0.950000     0.001526
+              rmse     uncertainty_only          120               15         0.000828                  0.000638                   0.001029         1.975972e-06                 0.000061                  1.000000     0.000427
+ balanced_accuracy     uncertainty_only          120               15         0.055948                  0.036184                   0.076650         5.294942e-10                 0.000305                  0.950000     0.001526
+decision_agreement   two_sided_straddle          120               15         0.000573                 -0.000054                   0.001227         1.814117e-01                 0.139676                  0.433333     0.427979
+ missed_exceedance   two_sided_straddle          120               15        -0.007021                 -0.028015                   0.015981         9.609012e-01                 0.359131                 -0.283333     0.504761
+              rmse   two_sided_straddle          120               15        -0.000114                 -0.000305                   0.000070         1.101520e-01                 0.276855                 -0.333333     0.553711
+ balanced_accuracy   two_sided_straddle          120               15         0.003809                 -0.007450                   0.014125         8.978523e-01                 0.359131                  0.283333     0.504761
+decision_agreement  randomized_straddle          120               15         0.000947                  0.000067                   0.001867         1.922579e-01                 0.106995                  0.483333     0.427979
+ missed_exceedance  randomized_straddle          120               15        -0.025627                 -0.045183                  -0.008464         1.424437e-01                 0.015076                 -0.700000     0.060303
+              rmse  randomized_straddle          120               15        -0.001033                 -0.001204                  -0.000872         8.708653e-13                 0.000061                 -1.000000     0.000427
+ balanced_accuracy  randomized_straddle          120               15         0.012623                  0.004029                   0.022379         2.016212e-01                 0.015076                  0.700000     0.060303
+decision_agreement       posterior_risk          120               15         0.000480                 -0.000760                   0.001587         3.798541e-01                 0.232885                  0.350000     0.465770
+ missed_exceedance       posterior_risk          120               15        -0.020609                 -0.055998                   0.014456         2.312834e-01                 0.252380                 -0.350000     0.504761
+              rmse       posterior_risk          120               15        -0.001549                 -0.001699                  -0.001390         4.246876e-19                 0.000061                 -1.000000     0.000427
+ balanced_accuracy       posterior_risk          120               15         0.009956                 -0.007573                   0.027553         2.178792e-01                 0.252380                  0.350000     0.504761
+decision_agreement evidence_no_geometry          120               15         0.000560                 -0.000400                   0.001480         3.346741e-01                 0.348591                  0.275000     0.465770
+ missed_exceedance evidence_no_geometry          120               15        -0.028981                 -0.063387                   0.000184         3.629231e-01                 0.135376                 -0.450000     0.406128
+              rmse evidence_no_geometry          120               15        -0.000360                 -0.000497                  -0.000223         7.421596e-05                 0.000305                 -0.950000     0.000916
+ balanced_accuracy evidence_no_geometry          120               15         0.014493                  0.000013                   0.031608         4.942718e-01                 0.120544                  0.466667     0.361633

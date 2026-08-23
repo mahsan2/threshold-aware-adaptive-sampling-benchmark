@@ -1,0 +1,48 @@
+{
+  "grid_n": 25,
+  "max_budget": 100,
+  "batch": 4,
+  "init_n": 16,
+  "tau": 0.035,
+  "families": [
+    "smooth",
+    "waviness",
+    "local_defect",
+    "mixed"
+  ],
+  "noise_levels": [
+    0.003,
+    0.008
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "methods": [
+    "space_filling",
+    "geometry_only",
+    "uncertainty_only",
+    "evidence_gated",
+    "two_sided_straddle",
+    "randomized_straddle",
+    "posterior_risk",
+    "evidence_no_geometry",
+    "risk_geometry"
+  ],
+  "gp_kernel": "0.05^2 * Matern(nu=1.5, length_scale=0.16)",
+  "straddle_beta": 1.96,
+  "posterior_risk_definition": "min(P(accept|data), P(exceed|data))"
+}

@@ -1,0 +1,8 @@
+Items that cannot be filled without author-supplied facts or new physical data:
+
+1. Add the complete author list, affiliations, corresponding-author address, and e-mail to the journal title page/submission system.
+2. Add the exact funding agency wording, grant number(s), and funder role statement. Do not guess these from the fact that related work may be DoD-funded.
+3. Add the final CRediT author-contribution statement after the author list and roles are confirmed.
+4. Choose a software license before public GitHub/Zenodo release; no license is assigned in this package because that is an author/legal choice.
+5. After upload, replace the manuscript's provisional “Supplementary Code S1” wording with the final repository/DOI if the journal requires a public archive at submission.
+6. Physical CMM/scanner/OMM validation cannot be generated from the current materials. It requires real measurements and a defensible reference map. This is especially important if targeting a systems-oriented journal such as Journal of Manufacturing Systems; it is not fabricated here.
